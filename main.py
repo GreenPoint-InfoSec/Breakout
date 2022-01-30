@@ -5,7 +5,7 @@ import pygame
 
 pygame.init()
 
-def main():
+def game():
     # Define colors
     WHITE = (255,255,255)
     DARKBLUE = (0,50,150)
@@ -60,7 +60,7 @@ def main():
         all_sprites_list.add(brick)
         all_bricks.add(brick)
     
-    # Add the paddle to the list of sprites
+    # Add the paddle and ball to the list of sprites
     all_sprites_list.add(paddle)
     all_sprites_list.add(ball)
 
@@ -154,4 +154,4 @@ def main():
     pygame.quit()
 
 if __name__ == "__main__":
-    main()
+    game()
